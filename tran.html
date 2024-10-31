@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Confirmation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            color: #333;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            max-width: 500px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        /* 按钮样式 */
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border: none;
+            background: linear-gradient(135deg, #4a90e2, #007aff);
+            color: white;
+            width: 80%;
+            max-width: 300px;
+            height: 50px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s, background-color 0.3s;
+            margin-top: 20px;
+        }
+        /* 鼠标悬停效果 */
+        button:hover {
+            background: linear-gradient(135deg, #007aff, #4a90e2);
+        }
+        /* 点击效果 */
+        button:active {
+            transform: scale(0.98);
+        }
+        /* 底部文本样式 */
+        .footer {
+            font-size: 0.9em;
+            color: #888;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>【提示】</h1>
+        <p>系统检测到您使用了VPN或者代理，您无法访问大陆域名</p>
+        <p>点击下方按钮跳转到海外访问域名</p>
+		<p>防失联，请保存【tagxx.vip】域名到您的手机或者电脑</p>
+
+        <!-- 确认跳转按钮 -->
+        <button onclick="confirmRedirect()">Go! Go !Go!</button>
+    </div>
+
+    <!-- 底部文本 -->
+    <div class="footer">
+        © 2018 - 2024 Lan Kwai Fong Networks UK Ltd.
+    </div>
+
+    <script>
+        function confirmRedirect() {
+            window.open("https://tagss.pro", "_blank");
+        }
+    </script>
+</body>
+</html>
